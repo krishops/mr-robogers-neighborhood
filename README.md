@@ -41,6 +41,10 @@ Test: "Number submitted in text field will return an integer"
 Input: "10"
 Expect: 10
 
+Test: "Result will display items in the array"
+Input: "5"
+Expect: 0, "Beep!, "Boop!", "Won't you be my neighbor?", 4, 5
+
 
 THESE TESTS AND CODE ARE POINTLESS
 Test: "It should return true if an array contains 1"

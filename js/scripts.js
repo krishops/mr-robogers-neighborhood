@@ -26,8 +26,9 @@ function createArray(number) {
     }
     if (array[i] === 3 ) {
       array[i] = "Won't you be my neighbor?";
-    }
+  return array
   }
+}
 
 //AAAAAARRRRGHGHGHGH
 
@@ -40,6 +41,7 @@ $(document).ready(function()  {
     event.preventDefault();
     const number = parseInt($("#input").val());
     console.log(number)
+    $("#result").text(createArray(number));
   });
 });
 
