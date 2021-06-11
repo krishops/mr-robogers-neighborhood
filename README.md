@@ -24,9 +24,11 @@ Expect: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
-Describe: checkNumber()
+Describe: replaceBeep()
 
 Test: "It should return true if an array contains 1"
+Code: replaceBeep()
+Expect: true
 
 Test: "It should return true if an array contains 2"
 
