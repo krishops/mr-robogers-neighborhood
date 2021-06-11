@@ -1,28 +1,46 @@
 
-function checkNumber(element) {
-  if (element === 1 || element === 2 || element === 3) {
-    return true;
-  } 
-    else {
-      return false;
-    }
-  }
-  let array = [];
+// function checkNumber(element) {
+//   if (element === 1 || element === 2 || element === 3) {
+//     return true;
+//   } 
+//     else {
+//       return false;
+//     }
+//   }
+
 //creates an array
-function formArray(number) {
-for (i = 0; i <= number; i +=1 ) {
+function createArray(number) {
+  let array = [];
+  for (i = 0; i <= number; i +=1 ) {
   array.push(i)
 console.log(i, array)
+let n = array.includes(1);
+    
+  console.log(n) 
 }
 }
 
-function replaceBeep() {
-  for (let i = 0; i < array.length; i++)
-    if (array[i] === 1); {
-    return true;
-    }
-}
+// function replaceBeep() {
+//   for (let i = 0; i < array.length; i++)
+//     if (array[i] === 1); {
+//     return true;
+//     }
+// }
 
+// function replaceBoop() {
+//   for (let i = 0; i < array.length; i++)
+//     if (array[i] === 2); {
+//     return true;
+//     }
+// }
+
+// function replaceNeighbor() {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === 3); {
+//     return true;
+//     }
+// }
+// }
 
 
 
