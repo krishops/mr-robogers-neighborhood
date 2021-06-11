@@ -16,10 +16,10 @@ function createArray(number) {
 console.log(i, array)
 // let n = array.includes(1);
 //   console.log(n) 
-let m = array.includes(2);
-    console.log(m)
-// let o = array.includes(3);
-//     console.log(o)
+// let m = array.includes(2);
+//     console.log(m)
+let o = array.includes(3);
+    console.log(o)
 }
 }
 
