@@ -6,7 +6,7 @@ Describe: mrRoboger()
 
 Test: "It should return an array containing 0 if 0 is inputted"
 Code: mrRoboger(0);
-Expect: ['0']
+Expect: [0]
 
 Test: "It should return an array containing 0 and 1, if 1 is inputted"
 Code: mrRoboger(1);
