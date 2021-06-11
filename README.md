@@ -30,9 +30,20 @@ Test: "It should return true if an array contains 1"
 Code: replaceBeep()
 Expect: true
 
-Test: "It should return true if an array contains 2"
+Test: "It should replace 1 with "Beep!" within the array"
+Code: replaceBeep()
+Expect: [0, "Beep!", 2, 3, 4, 5]
 
+Describe: replaceBoop()
+
+Test: "It should return true if an array contains 2"
+Code: replaceBoop()
+Expect: true
+
+Descrbe: replaceNeighbor()
 Test: "It should return true if an array contains 3"
+Code: replaceNeighbor()
+Expect: true
 
 Test: "It should replace 1 with "Beep!"
 
