@@ -17,6 +17,7 @@ function createArray(number) {
   for (i = 0; i <= number; i +=1 ) {
     array.push(i); 
     console.log(i, array);
+    // array.toString();
     if (array[i] === 1 ) {
       array[i] = "Beep!";
     }
@@ -32,10 +33,19 @@ function createArray(number) {
 
 }
 
+//UI Logic
+
+$(document).ready(function()  {
+  $("form#roboger").submit(function (event) {
+    event.preventDefault();
+    const number = parseInt($("#input").val());
+    console.log(number)
+  });
+});
 
 
 
-      //I DON'T NEED TO STRING THE NUMBERS!!!
+      //I DON'T NEED TO STRING THE NUMBERS!!! Unitl I doooooo
 //       array = array.String(i).split(" ");
       
 //       console.log(array)

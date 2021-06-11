@@ -3,9 +3,26 @@
 <head>
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron" id="heading">
+      <h1>Mr. Roboger's Neighborhood</h1>
+    </div>
+
+    <form id="roboger">
+      <div class="form-group">
+        <label for="input" class="question">Input a Number</label>
+        <input type="text" id="input" class="form-control">
+      </div>
+      <button type="submit" class="btn-light" id="submit-number">Submit</button>
+      <div class="row">
+        <div class="result" id="hidden"></div>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
