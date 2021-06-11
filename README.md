@@ -27,29 +27,17 @@ Expect: false
 Code: createArray(1)
 Expect true
 
-Test: "It should replace 1 with "Beep!" within the array"
-Code: replaceBeep(array)
-Expect: [0, "Beep!", 2, 3, 4, 5]
-
-Describe: replaceBoop(array)
-
 Test: "It should return true if an array contains 2"
-Code: replaceBoop(array)
-Expect: true
-
-Test: "It should replace 2 with "Boop!" within the array"
-Code: replaceBeep(array)
-Expect: [0, 1, "Boop!", 3, 4, 5]
-
-Descrbe: replaceNeighbor(array)
+Code: createArray(1)
+Expect: false
+Code: createArray(2)
+Expect true
 
 Test: "It should return true if an array contains 3"
-Code: replaceNeighbor(array)
-Expect: true
-
-Test: "It should replace 3 with "Won't you be my neighbor?" within the array"
-Code: replaceBeep(array)
-Expect: [0, 1, 2, "Won't you be my neighbor?", 4, 5]
+Code: createArray(2)
+Expect: false
+Code: createArray(3)
+Expect true
 
 Test: "It should replace 1 with "Beep!"
 

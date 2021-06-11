@@ -14,9 +14,12 @@ function createArray(number) {
   for (i = 0; i <= number; i +=1 ) {
   array.push(i)
 console.log(i, array)
-let n = array.includes(1);
-    
-  console.log(n) 
+// let n = array.includes(1);
+//   console.log(n) 
+let m = array.includes(2);
+    console.log(m)
+// let o = array.includes(3);
+//     console.log(o)
 }
 }
 
