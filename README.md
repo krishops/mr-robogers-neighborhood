@@ -25,6 +25,10 @@ Test: "It should convert numbers in the array into individual strings"
 Code: createArray(5)
 Expect ["1", "2", "3", "4", "5"]
 
+
+
+Describe: resultToShow()
+
 Test: "It should convert strings containing a 1 into "Beep!"
 Expect: ["Beep!", "2", "5", "Beep!", "Beep!", "24" "Beep!"]
 
@@ -34,44 +38,19 @@ Expect: ["Beep!", "Boop!", "5", "Won't you be my neighbor?", "Beep!", "Boop!" "W
 
 
 
+
+
+
+
+
 HTML Tests
 Test: "Number submitted in text field will return an integer"
 Input: "10"
 Expect: 10
 
-Test: "Result will display items in the array"
+Test: "Number submitted in text field will be transferred into function createArray()"
 Input: "5"
-Expect: 0, "Beep!, "Boop!", "Won't you be my neighbor?", 4, 5
+Expect: console.log = ["1", "2", "3", "4", "5"]
 
 
-THESE TESTS AND CODE ARE POINTLESS
-Test: "It should return true if an array contains 1"
-Code: createArray(0)
-Expect: false
-Code: createArray(1)
-Expect true
-
-Test: "It should return true if an array contains 2"
-Code: createArray(1)
-Expect: false
-Code: createArray(2)
-Expect true
-
-Test: "It should return true if an array contains 3"
-Code: createArray(2)
-Expect: false
-Code: createArray(3)
-Expect true
-
-Test: "It should replace 1 with "Beep!"
-Code: createArray(5);
-Expect: [0, "Beep!, 2, 3, 4, 5]
-
-Test: "It should replace 2 with "Boop!"
-Code: createArray(5);
-Expect: [0, "Beep!, "Boop!", 3, 4, 5]
-
-Test: "It should replace 3 with "Won't you be my neighbor?
-Code: createArray(5);
-Expect: [0, "Beep!, "Boop!", "Won't you be my neighbor?", 4, 5]
 

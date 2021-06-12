@@ -15,48 +15,47 @@
 // let array = []
 
 
-// function createArray(userInput) {
-//   let array = [];
-//   for (i = 0; i <= userInput; i += 1) {
-//     array.push(i.toString())
-//     console.log(i, array);  
-// }
+function createArray(userInput) {
+  let array = [];
+  for (i = 0; i <= userInput; i += 1) {
+    array.push(i.toString())
+    console.log(i, array);  
+  }
+  return array
+}
+
+// let array = ["1", "2", "3", "4", "15", "24", "31"];
+
+// function resultToShow(array) {
+//   for (i = 0; i <= array.length; i += 1) { 
+//     if (array[i].includes("3")) { 
+//       array[i] = "Won't you be my neighbor?";
+//     }
+//     else if (array[i].includes("2")) {
+//       array[i] = "Boop!";
+//     }  
+//     else if (array[i].includes("1")) {
+//       array[i] = "Beep!";
+//       }
+//       console.log(array)
+      
+//   }
 //   return array
 // }
-// Can't figure out how to get this array created from the user to be applied to the next loop, so I'm just going to test my code for replacing numbers with words and make sure i get that right.
-
-let array = ["1", "2", "5", "13", "15", "24", "31"];
-  for (i = 0; i <= array.length; i += 1) {
-    if (array[i].includes("3")) { 
-      array[i] = "Won't you be my neighbor?";
-    }
-    else if (array[i].includes("2")) {
-      array[i] = "Boop!";
-    }  
-    else if (array[i].includes("1")) {
-      array[i] = "Beep!";
-      }
-      console.log(array)
-      
-    }
-  
-  
 
 
-//AAAAAARRRRGHGHGHGH
 
 
 
 //UI Logic
 
-// $(document).ready(function () {
-//   $("form#roboger").submit(function (event) {
-//     event.preventDefault();
-//     const userInput = parseInt($("#input").val());
-//     // console.log(number)
-//     let array = createArray(userInput)
+$(document).ready(function () {
+  $("form#roboger").submit(function (event) {
+    event.preventDefault();
+    const userInput = parseInt($("#input").val());
+    let array = createArray(userInput)
     
-//     $("#result").text(stringToShow(array));
-    
-//   });
-// });
+    $("#output").text(resultToShow(array));
+
+  });
+});
