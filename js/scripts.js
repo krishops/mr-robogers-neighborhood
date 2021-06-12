@@ -1,4 +1,4 @@
-// At this point I feel like I know what I need to do but I can't figure out the functions to be able to do it. I need the inputted value to be parsed into each number leading up to the inputted value. The best way I can figure to do this is to push it into an array. But then I need my integers to be strings so that I can target a specific digit in the number instead of the number as a whole. However, I can get .toString to take the array as a whole and turn it into a string but I want each individual element of the array to be a string, but I'm not sure what function I need to do that. After I can turn the numbers into individual strings, I feel like this problem should be pretty simple to accomplish. 
+// At this point I feel like I know what I need to do but I can't figure out the functions to be able to do it. I need the inputted value to be parsed into each number leading up to the inputted value. The best way I can figure to do this is to push it into an array. But then I need my integers to be strings so that I can target a specific digit in the number instead of the number as a whole. However, I can get .toString to take the array as a whole and turn it into a string but I want each individual element of the array to be a string, but I'm not sure what function I need to do that. After I can turn the numbers into individual strings, I feel like this problem should be pretty simple to accomplish. What I have right now is pretty much a mess, because I keep trying different things and now TDD is pretty much shot. 
 
 
 
@@ -18,8 +18,9 @@
 function createArray(userInput) {
   let array = [];
   for (i = 0; i <= userInput; i += 1) {
-    const numbers = [array.push(i)];
-    console.log(numbers);
+    array.push(i.toString())
+    console.log(i, array);
+    
     // let numString = []
     // numbers.forEach(function(element) {
     //   newArray.toString(element)
@@ -42,6 +43,7 @@ function createArray(userInput) {
     // });
 
   }
+  return array
 }
 
 //AAAAAARRRRGHGHGHGH
@@ -55,7 +57,9 @@ $(document).ready(function () {
     event.preventDefault();
     const userInput = parseInt($("#input").val());
     // console.log(number)
-    $("#result").text(createArray(userInput));
+    let array = createArray(userInput)
+    // $("#result").text(createArray(userInput));
+    
   });
 });
 
