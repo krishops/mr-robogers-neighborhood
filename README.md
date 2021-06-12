@@ -28,6 +28,9 @@ Expect ["1", "2", "3", "4", "5"]
 Test: "It should convert strings containing a 1 into "Beep!"
 Expect: ["Beep!", "2", "5", "Beep!", "Beep!", "24" "Beep!"]
 
+Test: "It should convert strings containing 1 into "Beep!", 2 into "Boop!", and 3 into "Won't you be my Neigbor?"
+Expect: ["Beep!", "Boop!", "5", "Won't you be my neighbor?", "Beep!", "Boop!" "Won't you be my neigbor?"]
+
 
 
 

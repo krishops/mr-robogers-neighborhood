@@ -27,8 +27,14 @@
 
 let array = ["1", "2", "5", "13", "15", "24", "31"];
   for (i = 0; i <= array.length; i += 1) {
-      if (array[i].includes("1")) {
-        array[i] = "Beep!";
+    if (array[i].includes("3")) { 
+      array[i] = "Won't you be my neighbor?";
+    }
+    else if (array[i].includes("2")) {
+      array[i] = "Boop!";
+    }  
+    else if (array[i].includes("1")) {
+      array[i] = "Beep!";
       }
       console.log(array)
       
@@ -54,11 +60,3 @@ let array = ["1", "2", "5", "13", "15", "24", "31"];
     
 //   });
 // });
-
-
-
-      //I DON'T NEED TO STRING THE NUMBERS!!! Unitl I doooooo
-//       array = array.String(i).split(" ");
-
-//       console.log(array)
-// 
