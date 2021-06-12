@@ -1,3 +1,6 @@
+// At this point I feel like I know what I need to do but I can't figure out the functions to be able to do it. I need the inputted value to be parsed into each number leading up to the inputted value. The best way I can figure to do this is to push it into an array. But then I need my integers to be strings so that I can target a specific digit in the number instead of the number as a whole. However, I can get .toString to take the array as a whole and turn it into a string but I want each individual element of the array to be a string, but I'm not sure what function I need to do that. After I can turn the numbers into individual strings, I feel like this problem should be pretty simple to accomplish. 
+
+
 
 // function checkNumber(element) {
 //   if (element === 1 || element === 2 || element === 3) {
@@ -12,36 +15,47 @@
 // let array = []
 
 
-function createArray(number) {
+function createArray(userInput) {
   let array = [];
-  for (i = 0; i <= number; i +=1 ) {
-    array.push(i); 
-    console.log(i, array);
-    // array.toString();
-    if (array[i] === 1 ) {
-      array[i] = "Beep!";
-    }
-    if (array[i] === 2 ) {
-      array[i] = "Boop!";
-    }
-    if (array[i] === 3 ) {
-      array[i] = "Won't you be my neighbor?";
-  return array
+  for (i = 0; i <= userInput; i += 1) {
+    const numbers = [array.push(i)];
+    console.log(numbers);
+    // let numString = []
+    // numbers.forEach(function(element) {
+    //   newArray.toString(element)
+    //   console.log(numString)
+    // });
+    
+
+
+    // array.forEach(function(element) {
+    //   if (element === 1) {
+    //     element = "Beep!";
+    //   }
+    //   if (element === 2) {
+    //     element = "Boop!";
+    //   }
+    //   if (element === 3) {
+    //     element = "Won't you be my neighbor?";
+    //     // return array.toString()
+    //   }
+    // });
+
   }
 }
 
 //AAAAAARRRRGHGHGHGH
 
-}
+
 
 //UI Logic
 
-$(document).ready(function()  {
+$(document).ready(function () {
   $("form#roboger").submit(function (event) {
     event.preventDefault();
-    const number = parseInt($("#input").val());
-    console.log(number)
-    $("#result").text(createArray(number));
+    const userInput = parseInt($("#input").val());
+    // console.log(number)
+    $("#result").text(createArray(userInput));
   });
 });
 
@@ -49,6 +63,6 @@ $(document).ready(function()  {
 
       //I DON'T NEED TO STRING THE NUMBERS!!! Unitl I doooooo
 //       array = array.String(i).split(" ");
-      
+
 //       console.log(array)
 // 
