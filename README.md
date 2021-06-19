@@ -19,7 +19,7 @@ This program demonstrates the use of `for` loops by taking a number inputted by 
 
 1. Create an empty directory with no local repository. 
 2. Within the new directory, run `git clone https://github.com/krishops/mr-robogers-neighborhood.git` in the terminal to clone the project files to a local repository.
-3. Within the top level of the cloned directory, open language-selector/index.html to run the program in the browser.
+3. Within the top level of the cloned directory, open mr-robogers-neighborhood/index.html to run the program in the browser.
 
 ## Known Bugs
 
@@ -64,10 +64,16 @@ Expect ["0", "1", "2", "3", "4", "5"]
 Describe: resultToShow()
 
 Test: "It should convert strings containing a 1 into "Beep!"
+Code: resultToShow(["1", "2", "5", "13", "15", "24", "31"])
 Expect: ["Beep!", "2", "5", "Beep!", "Beep!", "24" "Beep!"]
 
 Test: "It should convert strings containing 1 into "Beep!", 2 into "Boop!", and 3 into "Won't you be my Neigbor?"
+Code: resultToShow(["1", "2", "5", "13", "15", "24", "31"])
 Expect: ["Beep!", "Boop!", "5", "Won't you be my neighbor?", "Beep!", "Boop!" "Won't you be my neigbor?"]
+
+Test: "It should replace array values of an array made from createArray() with the appropriate phrases. 
+Code: resultToShow(5)
+Expect: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5"]
 
 
 
